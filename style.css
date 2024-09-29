@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url('./nature.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.glass-container {
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.2); /* White with transparency */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    padding: 50px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-box button i {
+    color: white;
+}
+
+.search-box button i.fa-search {
+    font-size: 18px;
+}
+
+/* New div with glass effect inside the container */
+.glass-inner {
+    width: 80%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 24px;
+}
+#celcius{
+    color: rgb(112, 203, 173);
+}
+#desc{
+    color: rgb(95, 205, 168);
+}
